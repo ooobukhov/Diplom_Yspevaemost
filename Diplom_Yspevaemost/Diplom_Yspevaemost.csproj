@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E773344-99A4-496B-B807-471D25413940}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Diplom_Yspevaemost</RootNamespace>
+    <AssemblyName>Diplom_Yspevaemost</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Иван\Приложение\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8161C5B5AD8662E6E7BB03ACC9F7FD915D4F4D65</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Diplom_Yspevaemost_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Tables.Designer.cs">
+      <DependentUpon>Admin_Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceAD.Designer.cs">
+      <DependentUpon>AttendanceAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceST.Designer.cs">
+      <DependentUpon>AttendanceST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceTE.Designer.cs">
+      <DependentUpon>AttendanceTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesAD.Designer.cs">
+      <DependentUpon>ClassesAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesSt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesSt.Designer.cs">
+      <DependentUpon>ClassesSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesTE.Designer.cs">
+      <DependentUpon>ClassesTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DinamicYspevaemosti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DinamicYspevaemosti.Designer.cs">
+      <DependentUpon>DinamicYspevaemosti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DinamicYspevaemostiTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DinamicYspevaemostiTeacher.Designer.cs">
+      <DependentUpon>DinamicYspevaemostiTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diplom_YspevaemostDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Diplom_YspevaemostDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Diplom_YspevaemostDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Diplom_YspevaemostDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsAD.Designer.cs">
+      <DependentUpon>DocumentsAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsTE.Designer.cs">
+      <DependentUpon>DocumentsTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalGradesAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalGradesAD.Designer.cs">
+      <DependentUpon>FinalGradesAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalGradesST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalGradesST.Designer.cs">
+      <DependentUpon>FinalGradesST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalGradesTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalGradesTE.Designer.cs">
+      <DependentUpon>FinalGradesTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glavnaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glavnaya.Designer.cs">
+      <DependentUpon>Glavnaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grades.Designer.cs">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradesAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradesAD.Designer.cs">
+      <DependentUpon>GradesAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradesTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradesTE.Designer.cs">
+      <DependentUpon>GradesTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentsAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentsAD.Designer.cs">
+      <DependentUpon>ParentsAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentsTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentsTE.Designer.cs">
+      <DependentUpon>ParentsTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SheduleAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SheduleAD.Designer.cs">
+      <DependentUpon>SheduleAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SheduleTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SheduleTE.Designer.cs">
+      <DependentUpon>SheduleTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsAD.Designer.cs">
+      <DependentUpon>StudentsAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsTE.Designer.cs">
+      <DependentUpon>StudentsTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Tables.Designer.cs">
+      <DependentUpon>Student_Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectsAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectsAD.Designer.cs">
+      <DependentUpon>SubjectsAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectsTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectsTE.Designer.cs">
+      <DependentUpon>SubjectsTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersAD.Designer.cs">
+      <DependentUpon>TeachersAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersST.Designer.cs">
+      <DependentUpon>TeachersST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersTE.Designer.cs">
+      <DependentUpon>TeachersTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_Tables.Designer.cs">
+      <DependentUpon>Teacher_Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zapros1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zapros1.Designer.cs">
+      <DependentUpon>zapros1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zapros2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zapros2.Designer.cs">
+      <DependentUpon>zapros2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zapros3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zapros3.Designer.cs">
+      <DependentUpon>zapros3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zapros4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zapros4.Designer.cs">
+      <DependentUpon>zapros4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zapros5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zapros5.Designer.cs">
+      <DependentUpon>zapros5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zapros6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zapros6.Designer.cs">
+      <DependentUpon>zapros6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zaprosi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zaprosi.Designer.cs">
+      <DependentUpon>Zaprosi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Tables.resx">
+      <DependentUpon>Admin_Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceAD.resx">
+      <DependentUpon>AttendanceAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceST.resx">
+      <DependentUpon>AttendanceST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceTE.resx">
+      <DependentUpon>AttendanceTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesAD.resx">
+      <DependentUpon>ClassesAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesSt.resx">
+      <DependentUpon>ClassesSt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesTE.resx">
+      <DependentUpon>ClassesTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DinamicYspevaemosti.resx">
+      <DependentUpon>DinamicYspevaemosti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DinamicYspevaemostiTeacher.resx">
+      <DependentUpon>DinamicYspevaemostiTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsAD.resx">
+      <DependentUpon>DocumentsAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsTE.resx">
+      <DependentUpon>DocumentsTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalGradesAD.resx">
+      <DependentUpon>FinalGradesAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalGradesST.resx">
+      <DependentUpon>FinalGradesST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalGradesTE.resx">
+      <DependentUpon>FinalGradesTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glavnaya.resx">
+      <DependentUpon>Glavnaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades.resx">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradesAD.resx">
+      <DependentUpon>GradesAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradesTE.resx">
+      <DependentUpon>GradesTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentsAD.resx">
+      <DependentUpon>ParentsAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentsTE.resx">
+      <DependentUpon>ParentsTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SheduleAD.resx">
+      <DependentUpon>SheduleAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SheduleTE.resx">
+      <DependentUpon>SheduleTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsAD.resx">
+      <DependentUpon>StudentsAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsTE.resx">
+      <DependentUpon>StudentsTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Tables.resx">
+      <DependentUpon>Student_Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectsAD.resx">
+      <DependentUpon>SubjectsAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectsTE.resx">
+      <DependentUpon>SubjectsTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersAD.resx">
+      <DependentUpon>TeachersAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersST.resx">
+      <DependentUpon>TeachersST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersTE.resx">
+      <DependentUpon>TeachersTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Tables.resx">
+      <DependentUpon>Teacher_Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zapros1.resx">
+      <DependentUpon>zapros1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zapros2.resx">
+      <DependentUpon>zapros2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zapros3.resx">
+      <DependentUpon>zapros3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zapros4.resx">
+      <DependentUpon>zapros4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zapros5.resx">
+      <DependentUpon>zapros5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zapros6.resx">
+      <DependentUpon>zapros6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zaprosi.resx">
+      <DependentUpon>Zaprosi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Diplom_YspevaemostDataSet.xsc">
+      <DependentUpon>Diplom_YspevaemostDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Diplom_YspevaemostDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Diplom_YspevaemostDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Diplom_YspevaemostDataSet.xss">
+      <DependentUpon>Diplom_YspevaemostDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Diplom_YspevaemostDataSet1.xsc">
+      <DependentUpon>Diplom_YspevaemostDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Diplom_YspevaemostDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Diplom_YspevaemostDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Diplom_YspevaemostDataSet1.xss">
+      <DependentUpon>Diplom_YspevaemostDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Diplom_Yspevaemost_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
