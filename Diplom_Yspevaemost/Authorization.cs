@@ -47,7 +47,7 @@ MessageBoxIcon.Question);
             // Проверка логина и пароля для преподавателя
             if (login_textBox.Text == "teacher" && password_textBox.Text == "teacher")
             {
-                Teacher_Tables frm = new Teacher_Tables(connectTB);
+                Teacher_Tables frm = new Teacher_Tables();
                 frm.Show();
                 this.Hide();
                 isAuthenticated = true;

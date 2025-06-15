@@ -71,8 +71,9 @@ namespace Diplom_Yspevaemost
         // Метод для заполнения ComboBoxStudents (без изменений)
         private void PopulateStudentsComboBox()
         {
-            string connectionString = "Data Source=WIN-RGCFO3057QU;Initial Catalog=Diplom_Yspevaemost;Integrated Security=True;";
-            string sqlQuery = "SELECT StudentID, Name + ' ' + Surname AS FullName FROM Students ORDER BY FullName";
+
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Diplom_Yspevaemost.mdf;Integrated Security=True;Connect Timeout=30";
+            string sqlQuery = "SELECT StudentID, Name + ' ' + Surname AS FullName FROM Students ORDER BY FullName"; 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(sqlQuery, connection))
@@ -97,7 +98,7 @@ namespace Diplom_Yspevaemost
         // Метод для заполнения ComboBoxClasses (без изменений)
         private void PopulateClassesComboBox()
         {
-            string connectionString = "Data Source=WIN-RGCFO3057QU;Initial Catalog=Diplom_Yspevaemost;Integrated Security=True;";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Diplom_Yspevaemost.mdf;Integrated Security=True;Connect Timeout=30";
             string sqlQuery = "SELECT ClassID, ClassName FROM Classes ORDER BY ClassName";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -124,7 +125,7 @@ namespace Diplom_Yspevaemost
         // Метод для отображения распределения оценок по ученику
         private void DisplayGradeDistributionChartForStudent(int studentId)
         {
-            string connectionString = "Data Source=WIN-RGCFO3057QU;Initial Catalog=Diplom_Yspevaemost;Integrated Security=True;";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Diplom_Yspevaemost.mdf;Integrated Security=True;Connect Timeout=30";
             string sqlQuery = @"
                 SELECT G.Grade, COUNT(G.Grade) AS GradeCount
                 FROM Grades AS G INNER JOIN Students AS S ON G.StudentID = S.StudentID
@@ -177,7 +178,7 @@ namespace Diplom_Yspevaemost
         // Метод для отображения распределения оценок по классу
         private void DisplayGradeDistributionChartForClass(int classId)
         {
-            string connectionString = "Data Source=WIN-RGCFO3057QU;Initial Catalog=Diplom_Yspevaemost;Integrated Security=True;";
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Diplom_Yspevaemost.mdf;Integrated Security=True;Connect Timeout=30";
             string sqlQuery = @"
                 SELECT G.Grade, COUNT(G.Grade) AS GradeCount
                 FROM Grades AS G INNER JOIN Students AS S ON G.StudentID = S.StudentID INNER JOIN Classes AS C ON S.ClassID = C.ClassID

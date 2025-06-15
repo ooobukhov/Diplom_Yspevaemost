@@ -12,7 +12,7 @@ namespace Diplom_Yspevaemost
 {
     public partial class Teacher_Tables : Form
     {
-        public Teacher_Tables(connectTB)
+        public Teacher_Tables()
         {
             
             InitializeComponent();
